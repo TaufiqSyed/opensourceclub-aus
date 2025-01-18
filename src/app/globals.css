@@ -70,10 +70,28 @@ body {
   /* background-color: rgba(255, 255, 255, .15);   */
   backdrop-filter: blur(10px);
 }
+
+
 .learnSection {
   position: relative;
-  background: url('../../public/stars.png') no-repeat center center, radial-gradient(circle at top left, #7637db 0%, transparent 35%, transparent 50%);
+  background: url('../../public/stars.png') no-repeat center center;
   background-size: cover;
+}
+
+.gradient-top-left {
+  background: radial-gradient(circle at top left, #7637db 0%, transparent 35%, transparent 50%);
+}
+
+.gradient-top-right {
+  background: radial-gradient(circle at top right, #7637db 0%, transparent 50%, transparent 70%);
+}
+
+.gradient-bottom-left {
+  background: radial-gradient(circle at bottom left, #7637db 0%, transparent 35%, transparent 50%);
+}
+
+.gradient-bottom-right {
+  background: radial-gradient(circle at bottom right, #7637db 0%, transparent 50%, transparent 70%);
 }
 
 .learnSection::before {

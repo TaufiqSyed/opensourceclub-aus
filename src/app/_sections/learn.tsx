@@ -37,14 +37,13 @@ const links = [
     href: 'https://scikit-learn.org/stable/',
     icon: <FaPython className='w-12 h-12' />,
     title: 'Scikit-learn Tutorial',
-    description:
-      'Tutorials for Scikit-learn, a machine learning library for Python.',
+    description: 'Tutorials for Scikit-learn, an ML library for Python.',
   },
   {
     href: 'https://flutter.dev/docs/get-started/learn-more',
     icon: <SiFlutter className='w-12 h-12' />,
-    title: 'Flutter Learn',
-    description: 'Learn how to build beautiful apps with Flutter.',
+    title: 'Learn Flutter',
+    description: 'Learn how to build cross-platform apps with Flutter.',
   },
 ]
 
@@ -52,7 +51,7 @@ export const Learn = () => {
   return (
     <section
       id='learn'
-      className='learnSection text-start justify-start relative items-start flex flex-col w-full h-full pt-20 px-4'
+      className='learnSection gradient-top-right text-start justify-start relative items-start flex flex-col w-full h-full pt-20 px-4'
     >
       <p className='font-extrabold gradient-text uppercase text-3xl tracking-wide pb-4 pt-6 text-center w-full'>
         Learn

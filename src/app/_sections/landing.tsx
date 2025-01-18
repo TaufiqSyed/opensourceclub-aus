@@ -10,6 +10,7 @@ export const Landing = () => {
     document.getElementById(id)?.scrollIntoView({
       behavior: 'smooth',
     })
+    window.history.pushState(null, '', `#${id}`)
   }
   return (
     <section

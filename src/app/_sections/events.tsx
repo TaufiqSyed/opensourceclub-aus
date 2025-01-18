@@ -136,7 +136,7 @@ export const Events = () => {
   return (
     <section
       id='events'
-      className='learnSection text-start justify-start relative items-start flex flex-col w-full h-full pt-20 px-4'
+      className='learnSection gradient-bottom-left text-start justify-start relative items-start flex flex-col w-full h-full pt-20 px-4'
     >
       <p className='font-extrabold gradient-text uppercase text-3xl tracking-wide pb-4 pt-6 text-center w-full'>
         Events
