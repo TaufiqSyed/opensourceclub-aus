@@ -10,19 +10,36 @@ export const Members = () => {
   const [members, setMembers] = useState<Member[]>([])
   const [colors, setColors] = useState<string[]>([])
 
-  const getRandomDarkColor = () => {
-    const r = Math.floor(Math.random() * 150)
-    const g = Math.floor(Math.random() * 150)
-    const b = Math.floor(Math.random() * 150)
-    return `rgb(${r}, ${g}, ${b})`
+  const hashString = (str: string) => {
+    let hash = 0
+    for (let i = 0; i < str.length; i++) {
+      hash = str.charCodeAt(i) + ((hash << 5) - hash)
+    }
+    return hash
   }
 
+  const intToDarkRGB = (i: number) => {
+    const r = (i & 0xff0000) >> 16
+    const g = (i & 0x00ff00) >> 8
+    const b = i & 0x0000ff
+    const darkR = Math.floor((r / 255) * 150)
+    const darkG = Math.floor((g / 255) * 150)
+    const darkB = Math.floor((b / 255) * 150)
+    return `rgb(${darkR}, ${darkG}, ${darkB})`
+  }
+
+  const getColorFromName = (name: string) => {
+    const hash = hashString(name)
+    return intToDarkRGB(hash)
+  }
   useEffect(() => {
     fetch('/members.json')
       .then((response) => response.json())
       .then((data) => {
         setMembers(data.members)
-        setColors(data.members.map(() => getRandomDarkColor()))
+        setColors(
+          data.members.map((member: Member) => getColorFromName(member.name))
+        )
       })
       .catch((error) => console.error('Error fetching members:', error))
   }, [])
