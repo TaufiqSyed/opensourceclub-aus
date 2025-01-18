@@ -47,7 +47,7 @@ export const About = () => {
                 </span>{' '}
                 @ the American University of Sharjah is a community for students
                 passionate about open-source software. We provide resources,
-                collaborative projects, and networking opportunities.
+                interactive workshops, and networking opportunities.
               </p>
               <p className='text-lg mb-8 text-center'>
                 Join us to explore new technologies, grow your expertise, and
