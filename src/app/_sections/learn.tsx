@@ -23,7 +23,7 @@ const links = [
   {
     href: 'https://scrimba.com/learn/learnreact',
     icon: <FaReact className='w-12 h-12' />,
-    title: 'Bob Ziroll React Scrimba Tutorial',
+    title: 'Interactive React Tutorial',
     description: 'Comprehensive React tutorial by Bob Ziroll on Scrimba.',
   },
   {
