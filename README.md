@@ -11,7 +11,7 @@ We welcome contributions from everyone. Here are some ways you can contribute:
 ### Adding Your Name to Members
 
 1. Fork the repository.
-2. Add your name to the `members.json` file.
+2. Add your name to the `public/members.json` file.
 3. Create a pull request with your changes.
 
 ### Fixing Bugs
