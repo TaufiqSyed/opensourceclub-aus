@@ -1,16 +1,11 @@
-import {
-  FaGithub,
-  FaReact,
-  FaPython,
-  FaGitAlt,
-  FaCodeBranch,
-} from 'react-icons/fa'
+import { FaReact, FaPython, FaCodeBranch } from 'react-icons/fa'
 import { SiFlutter, SiHuggingface } from 'react-icons/si'
+import { VscVscode } from 'react-icons/vsc'
 
 const links = [
   {
     href: 'https://code.visualstudio.com/',
-    icon: <FaGithub className='w-12 h-12' />,
+    icon: <VscVscode className='w-12 h-12' />,
     title: 'Install VSCode',
     description: 'Get started with Visual Studio Code, a powerful code editor.',
   },
