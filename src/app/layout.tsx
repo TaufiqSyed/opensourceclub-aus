@@ -16,7 +16,7 @@ const courier_prime = Courier_Prime({
 })
 
 export const metadata: Metadata = {
-  title: 'Open-Source Club',
+  title: 'Open-Source Club @ AUS',
   description:
     'A student-led organization that harnesses the power of open-source software.',
 }
