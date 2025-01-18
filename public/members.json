@@ -1,0 +1,36 @@
+{
+  "members": [
+    {
+      "name": "Ayush Pillai",
+      "position": "President"
+    },
+    {
+      "name": "Jim Doe",
+      "position": "Vice President"
+    },
+    {
+      "name": "John Doe",
+      "position": "Secretary"
+    },
+    {
+      "name": "Jane Smith",
+      "position": "Treasurer"
+    },
+    {
+      "name": "Alice Johnson",
+      "position": "Member"
+    },
+    {
+      "name": "Bob Brown",
+      "position": "Member"
+    },
+    {
+      "name": "Charlie Davis",
+      "position": "Member"
+    },
+    {
+      "name": "Eve White",
+      "position": "Member"
+    }
+  ]
+}

@@ -1,19 +1,19 @@
 'use client'
 
 import { About } from './_sections/about'
-import { Competitions } from './_sections/competitions'
-import { Education } from './_sections/education'
+import { Learn } from './_sections/learn'
+import { Events } from './_sections/events'
 import { Landing } from './_sections/landing'
-import { Projects } from './_sections/projects'
+import { Members } from './_sections/members'
 
 export default function Home() {
   return (
     <div className='bg'>
       <Landing />
-      {/* <About />
-        <Projects />
-        <Competitions />
-        <Education /> */}
+      <Learn />
+      <Events />
+      <Members />
+      <About />
     </div>
   )
 }
