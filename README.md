@@ -1,4 +1,4 @@
-# The Open Source Club @ American University of Sharjah
+# The Open Source Club @ AUS
 
 The Open Source Club at the American University of Sharjah is a community for students passionate about open-source software. We provide resources, interactive workshops, and networking opportunities.
 
