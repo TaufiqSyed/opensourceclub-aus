@@ -30,7 +30,7 @@ export const Members = () => {
   return (
     <section
       id='members'
-      className='learnSection gradient-top-left flex flex-col items-center justify-center w-full h-full pt-10 px-4'
+      className='learnSection gradient-top-left flex flex-col items-center justify-center w-full min-h-full pt-10 px-4'
     >
       <p className='font-extrabold gradient-text uppercase text-3xl tracking-wide pb-8 pt-6 text-center w-full'>
         Members

@@ -1,4 +1,3 @@
-import { FaChevronDown } from 'react-icons/fa'
 import {
   FaGithub,
   FaReact,
@@ -51,7 +50,7 @@ export const Learn = () => {
   return (
     <section
       id='learn'
-      className='learnSection gradient-top-right text-start justify-start relative items-start flex flex-col w-full h-full pt-20 px-4'
+      className='learnSection gradient-top-right text-start justify-start relative items-start flex flex-col w-full min-h-full pt-20 px-4'
     >
       <p className='font-extrabold gradient-text uppercase text-3xl tracking-wide pb-4 pt-6 text-center w-full'>
         Learn

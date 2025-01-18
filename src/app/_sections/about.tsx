@@ -26,7 +26,7 @@ export const About = () => {
   return (
     <section
       id='about-us'
-      className='learnSection gradient-bottom-right text-start justify-start relative items-start flex flex-col w-full h-full pt-20 pb-10 px-4'
+      className='learnSection gradient-bottom-right text-start justify-start relative items-start flex flex-col w-full min-h-full pt-20 pb-10 px-4'
     >
       <p className='font-extrabold gradient-text uppercase text-3xl tracking-wide pb-4 pt-6 text-center w-full'>
         About Us

@@ -1,7 +1,11 @@
 'use client'
 
-import { FaLinkedin, FaGithub, FaChevronDown } from 'react-icons/fa'
-import { Socials } from '../_components/about/socials'
+import {
+  FaLinkedin,
+  FaChevronDown,
+  FaInstagram,
+  FaWhatsapp,
+} from 'react-icons/fa'
 import { SectionLink } from '../_components/about/section-link'
 
 export const Landing = () => {
@@ -29,11 +33,77 @@ export const Landing = () => {
             Open-source is about empowering programmers, building community, and
             increasing reliability.
           </p>
+          <div className='flex flex-row space-x-4 mt-4'>
+            <svg width='1em' height='1em'>
+              <linearGradient
+                id='instagram-gradient'
+                x1='100%'
+                y1='100%'
+                x2='0%'
+                y2='0%'
+              >
+                <stop stopColor='#f09433' offset='0%' />
+                <stop stopColor='#bc1888' offset='100%' />
+              </linearGradient>
+              <linearGradient
+                id='whatsapp-gradient'
+                x1='100%'
+                y1='100%'
+                x2='0%'
+                y2='0%'
+              >
+                <stop stopColor='#25D366' offset='0%' />
+                <stop stopColor='#128C7E' offset='100%' />
+              </linearGradient>
+              <linearGradient
+                id='linkedin-gradient'
+                x1='100%'
+                y1='100%'
+                x2='0%'
+                y2='0%'
+              >
+                <stop stopColor='#0077B5' offset='0%' />
+                <stop stopColor='#005582' offset='100%' />
+              </linearGradient>
+            </svg>
+            <a
+              href='https://www.instagram.com/aus.osc/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='z-10'
+            >
+              <FaInstagram
+                size={24}
+                style={{ fill: 'url(#instagram-gradient)' }}
+              />
+            </a>
+            <a
+              href='https://chat.whatsapp.com/EEbQCxj23qE5vQx7Z9abAI'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='z-10'
+            >
+              <FaWhatsapp
+                size={24}
+                style={{ fill: 'url(#whatsapp-gradient)' }}
+              />
+            </a>
+            <a
+              href='https://www.linkedin.com/company/opensourceclub'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='z-10'
+            >
+              <FaLinkedin
+                size={24}
+                style={{ fill: 'url(#linkedin-gradient)' }}
+              />
+            </a>
+          </div>
         </div>
         <div className='flex-[4]'></div>
       </div>
-      <div className='mb-0 grid lg:mb-0 lg:w-full lg:px-32 grid-cols-4 text-left mt-8'>
-        {/* <div className='mt-8 md:mt-0 mb-0 grid text-center lg:mb-0 lg:w-full lg:max-w-screen-lg lg:grid-cols-4 lg:text-left'> */}
+      <div className='mb-0 grid grid-cols-1 gap-y-2 sm:grid-cols-2 lg:grid-cols-4 text-left mt-8 lg:px-32'>
         <SectionLink
           onClick={scrollToView('learn')}
           title={'Learn'}
